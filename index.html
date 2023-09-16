@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://1000logos.net/wp-content/uploads/2020/08/Imdb-logo.jpg"
+      type="image/x-icon"
+    />
+    <title>IMDB Movie App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===Header Start=== -->
+    <header>
+      <div>
+        <h1 class="header">IMDB MOVIE APP</h1>
+      </div>
+    </header>
+    <!-- ===Header End=== -->
+    <!-- ===Search-Section Start=== -->
+    <section>
+      <div class="search-cont">
+        <div class="search-bars">
+          <input
+            id="api"
+            type="text"
+            value="268804ea"
+            placeholder="Enter Your API Key Here"
+          />
+          <img src="Vector.png" alt="" />
+        </div>
+        <div class="search-bars">
+          <input id="movie" type="text" placeholder="Enter Movie Name Here" />
+          <img src="Search.png" alt="" />
+        </div>
+        <button id="search-btn">Search</button>
+      </div>
+    </section>
+    <!-- ===Search-Section End=== -->
+    <!-- ===Main-Section Start=== -->
+    <main>
+      <div class="loader">
+        <div class="buffer hide"></div>
+      </div>
+
+      <div id="movie-container"></div>
+
+      <div class="error"></div>
+    </main>
+    <!-- ===Main-Section End=== -->
+    <script src="script.js"></script>
+  </body>
+</html>
